@@ -1,13 +1,21 @@
-.col-centered {
-    display: inline-block;
-    float: none;
-    /* reset the text-align */
-    text-align: left;
-    /* inline-block space fix */
-    margin-right: -4px;
+body,
+html {
+    height: 100%;
 }
 
-.col-fixed {
-    /* custom width */
-    width: 320px;
+.alert {
+    border: 1px solid red;
+    height: 25em;
+}
+
+.alert2 {
+    background-color: orange;
+}
+
+.alert3 {
+    background-color: red;
+}
+
+ul li {
+    list-style: none;
 }
