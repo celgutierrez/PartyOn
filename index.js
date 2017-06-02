@@ -48,6 +48,10 @@ app.get('/contacts', function(req, res) {
     res.render('contacts');
 });
 
+app.get('/lockscreen', function(req, res) {
+    res.render('lockscreen');
+});
+
 //controllers
 //TO DO: auth controller
 app.use('/auth', require('./controllers/auth'));
