@@ -17,6 +17,7 @@ router.post('/login', passport.authenticate('local', {
     successFlash: 'Login successful, party on!',
     failureRedirect: '/auth/login',
     failureFlash: 'Email or password incorrect, try again.'
+
 }));
 
 
@@ -44,7 +45,9 @@ router.post('/signup', function(req, res, next) {
             })(req, res, next);
         } else {
             //bad
+
             req.flash('error', 'Email already exists. Please login');
+
             res.redirect('/auth/login');
         }
     }).catch(function(error) {
@@ -57,6 +60,7 @@ router.post('/signup', function(req, res, next) {
 router.get('/logout', function(req, res) {
     req.logout();
     req.flash('Logged out');
+
     res.redirect('/');
 });
 
