@@ -40,6 +40,14 @@ app.get('/profile', function(req, res) {
     res.render('profile');
 });
 
+app.get('/mockphone', function(req, res) {
+    res.render('iphonemock');
+});
+
+app.get('/contacts', function(req, res) {
+    res.render('contacts');
+});
+
 //controllers
 //TO DO: auth controller
 app.use('/auth', require('./controllers/auth'));
