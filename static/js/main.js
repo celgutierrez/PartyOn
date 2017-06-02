@@ -1,15 +1,14 @@
 $(function() {
-    console.log('good to go');
     var action = 1;
 
-    $("button").on("click", alertSys);
+    $("#phone").on("click", alertSys);
 
     function alertSys() {
         if (action == 1) {
-            alert('Favorites: Dad');
+            alert('Favorites: BFF, Roommate, Ex');
             action = 2;
         } else {
-            alert('Favorites: Dad');
+            alert('Favorites: BFF, Roommate, Ex');
             action = 1;
         }
     }
